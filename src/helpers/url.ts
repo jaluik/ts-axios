@@ -28,7 +28,6 @@ export function buildURL(url: string, params?: any): string {
     } else {
       values = [val]
     }
-    console.log(values)
     values.forEach(value => {
       let handledValue: string = value
       if (isDate(value)) {
